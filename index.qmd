@@ -202,6 +202,8 @@ By the end of the century, nearly all reef areas are projected to experience oce
 Hošeková, L., Friedrich, T., Powell, B. S., & Sabine, C. (2025). Patterns of ocean acidification emergence in the Hawaiian Islands using dynamically downscaled projections. Journal of Geophysical Research: Oceans, 130, e2024JC021903. https://doi.org/10.1029/2024JC021903
 
 ```{=html}
+
+
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 1rem;">
   <div style="text-align: center; margin: 1rem;">
     <img src="assets/images/lucia/hosekova_et_al_paper_qr_code.png" alt="QR code to paper" width="160">
