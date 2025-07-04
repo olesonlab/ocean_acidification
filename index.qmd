@@ -314,7 +314,7 @@ Vulnerability indices at the end-century reveal distinct community risk profiles
 </a>
 
 <a href="assets/WorkingPaper/CoralReef_Submission.pdf" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Paper" style="height: 30px;">
+  <img src="https://img.shields.io/badge/Download-Paper-blue" alt="Download Paper" style="height: 30px;">
 </a>
 ```
 
