@@ -121,7 +121,10 @@ Our study addresses this gap through integrated modeling. We combine high-resolu
 
 ```{=html}
 <a href="slides/osm_hosekova.pdf" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Slides">
+  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Slides" style="height: 40px;">
+</a>
+<small>Click the badge to download slides and the paper</small>
+  
 </a>
 ```
 
