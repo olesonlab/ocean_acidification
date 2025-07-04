@@ -121,11 +121,11 @@ Our study addresses this gap through integrated modeling. We combine high-resolu
 
 ```{=html}
 <a href="slides/osm_hosekova.pdf" target="_blank">
-  <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
 </a>
 
 <a href="link/to/your_paper.pdf" target="_blank">
- <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge">
+ <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
 </a>
 ```
 
@@ -314,11 +314,11 @@ Vulnerability indices at the end-century reveal distinct community risk profiles
 
 ```{=html}
 <a href="assets/slides/OAP_Welfare.pdf" target="_blank">
- <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge">
+ <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
 </a>
 
 <a href="assets/WorkingPaper/CoralReef_Submission.pdf" target="_blank">
- <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge">
+ <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
 </a>
 ```
 
