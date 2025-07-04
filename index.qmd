@@ -121,11 +121,7 @@ Our study addresses this gap through integrated modeling. We combine high-resolu
 
 ```{=html}
 <a href="assets/slides/osm_hosekova.pdf" target="_blank" rel="noopener">
-   <img src="https://img.shields.io/badge/📄_Download_Slides-blue?style=for-the-badge" alt="Download Slides" style="height: 30px;"\>
-</a>
-
-<a href="assets/WorkingPaper/your_paper.pdf" target="_blank">
-   <img src="https://img.shields.io/badge/📄_Download_Slides-blue?style=for-the-badge" alt="Download Slides"  style="height: 30px;">
+  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Slides" style="height: 30px;">
 </a>
 ```
 
@@ -202,8 +198,6 @@ By the end of the century, nearly all reef areas are projected to experience oce
 Hošeková, L., Friedrich, T., Powell, B. S., & Sabine, C. (2025). Patterns of ocean acidification emergence in the Hawaiian Islands using dynamically downscaled projections. Journal of Geophysical Research: Oceans, 130, e2024JC021903. https://doi.org/10.1029/2024JC021903
 
 ```{=html}
-
-
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 1rem;">
   <div style="text-align: center; margin: 1rem;">
     <img src="assets/images/lucia/hosekova_et_al_paper_qr_code.png" alt="QR code to paper" width="160">
@@ -315,17 +309,14 @@ Vulnerability indices at the end-century reveal distinct community risk profiles
 ## The socioeconomic impact of climate change on coral reef in the MHI
 
 ```{=html}
-<a href="assets/slides/OAP_Welfare.pdf" target="_blank">
- <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
+<a href="assets/slides/OAP_Welfare.pdf" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Slides" style="height: 30px;">
 </a>
 
-<a href="assets/WorkingPaper/CoralReef_Submission.pdf" target="_blank">
- <img src="https://img.shields.io/badge/Download_Paper-green?style=for-the-badge" style="height: 30px;">
+<a href="assets/WorkingPaper/CoralReef_Submission.pdf" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/Download-Slides-blue" alt="Download Paper" style="height: 30px;">
 </a>
 ```
-
-
-
 
 Projections of coral reef decline under climate change have major implications for the well-being of communities across the MHI, especially considering the central role reefs play in supporting coastal recreation, food security, and local economies. We developed a spatially explicit framework that links ecological projections from the Atlantis model with an economic valuation of changes in recreational reef use across the MHI to quantify these impacts.More actions
 
