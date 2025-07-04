@@ -312,7 +312,18 @@ Vulnerability indices at the end-century reveal distinct community risk profiles
 
 ## The socioeconomic impact of climate change on coral reef in the MHI
 
-[![](https://img.shields.io/badge/Download-Slides-blue)](assets/slides/slides.pptx)
+```{=html}
+<a href="assets/slides/OAP_Welfare.pdf" target="_blank">
+  <img src="https://img.shields.io/badge/📄_Download_Slides-blue?style=for-the-badge" alt="Download Slides"/>
+</a>
+
+<a href="assets/WorkingPaper/CoralReef_Submission.pdf" target="_blank">
+  <img src="https://img.shields.io/badge/📘_Download_Paper-green?style=for-the-badge" alt="Download Paper"/>
+</a>
+```
+
+
+
 
 Projections of coral reef decline under climate change have major implications for the well-being of communities across the MHI, especially considering the central role reefs play in supporting coastal recreation, food security, and local economies. We developed a spatially explicit framework that links ecological projections from the Atlantis model with an economic valuation of changes in recreational reef use across the MHI to quantify these impacts.More actions
 
