@@ -396,18 +396,6 @@ p {
   color: var(--accent-color);
 }
 
-/* Social icons */
-.footer-social a {
-  margin: 0 0.5rem;
-  color: var(--nav-color);
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.footer-social a:hover {
-  color: var(--accent-color);
-}
-
 /* Theme credits */
 .credits {
   font-size: 0.75rem;
@@ -592,6 +580,30 @@ p {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
+@media (max-width: 550px) {
+  .page-title h1 {
+    font-size: 23px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 445px) {
+  .page-title h1 {
+    font-size: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+  .section-authors {
+    font-size: 15px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
@@ -601,6 +613,15 @@ section,
   background-color: var(--background-color);
   padding: 60px 0;
   overflow: clip;
+}
+
+@media (max-width: 550px) {
+
+  section,
+  .section {
+    /* preserve your vertical padding, add 1rem left/right */
+    padding: 60px 1rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -648,6 +669,53 @@ section,
 .section-title p {
   margin-bottom: 0;
   text-align: left;
+}
+
+@media (min-width: 475px) and (max-width: 575px) {
+
+  .page-title .breadcrumbs ol,
+  .page-title h1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .page-title .breadcrumbs ol,
+  .page-title h1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 474px) {
+
+  .page-title .breadcrumbs ol,
+  .page-title h1 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .page-title .breadcrumbs ol {
+    font-size: 12px;
+  }
+
+  .page-title h1 {
+    font-size: 18px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .section-authors {
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -738,6 +806,20 @@ section,
 @media (max-width: 1200px) {
   .hero h2 {
     font-size: 36px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero p {
+    font-size: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero h2 {
+    font-size: 28px;
   }
 
   .hero p {
@@ -802,11 +884,74 @@ section,
   margin-bottom: 0.5rem;
 }
 
-/* Responsive: stack logos on mobile */
-@media (max-width: 576px) {
-  .ack-logos {
-    flex-direction: column;
-    align-items: center;
+/*────────────────────────────────────────────────────────────────────
+   Acknowledgement & Footer Logos — Responsive Sizes
+────────────────────────────────────────────────────────────────────*/
+
+/* up to 1000px */
+@media (max-width: 1000px) {
+  /* tighten the gaps in both containers */
+  .ack-logos,
+  .footer-logos {
+    gap: 1rem !important;
+    justify-content: center !important;
+  }
+
+  /* shrink *all* logos in both containers */
+  .ack-logos img,
+  .footer-logos .footer-logo {
+    height: 80px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* special SOEST override */
+  .ack-logos img.soest-logo,
+  .footer-logos .footer-logo--soest {
+    height: 130px !important;
+    width: auto !important;
+  }
+}
+
+/* between 550px and 767px */
+@media (min-width: 550px) and (max-width: 767px) {
+  .ack-logos,
+  .footer-logos {
+    gap: 1px !important;
+    justify-content: center !important;
+  }
+
+  .ack-logos img,
+  .footer-logos .footer-logo {
+    height: 70px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+
+  .ack-logos img.soest-logo,
+  .footer-logos .footer-logo--soest {
+    height: 115px !important;
+  }
+}
+
+/* up to 550px */
+@media (max-width: 550px) {
+  .ack-logos,
+  .footer-logos {
+    gap: 1px !important;
+    justify-content: center !important;
+  }
+
+  .ack-logos img,
+  .footer-logos .footer-logo {
+    height: 50px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+
+  .ack-logos img.soest-logo,
+  .footer-logos .footer-logo--soest {
+    height: 90px !important;
   }
 }
 
@@ -1006,9 +1151,9 @@ section,
   max-width: 468px;
   margin: 0.75rem auto 0;
   padding-top: 1rem;
-  padding-bottom: 1.25rem;         /* extra bottom padding for your absolute source */
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 80%);
+  padding-bottom: 1.25rem;
+  /* extra bottom padding for your absolute source */
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 
   font-size: 0.95rem;
   line-height: 1.4;
@@ -1023,10 +1168,12 @@ section,
 /* absolutely pin the source to the bottom-right of the caption box */
 .split-section .split-image figcaption .figure-source {
   position: absolute;
-  right: 0.5rem;                   /* tweak to align under the image’s right padding */
+  right: 0.5rem;
+  /* tweak to align under the image’s right padding */
   bottom: -0.15rem;
-  text-align: right;               
-  font-size: 0.75rem;              /* your desired size */
+  text-align: right;
+  font-size: 0.75rem;
+  /* your desired size */
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
@@ -1156,4 +1303,3 @@ section,
 .qr-card a:hover {
   text-decoration: underline;
 }
-

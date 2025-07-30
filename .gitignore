@@ -1,2 +1,4 @@
 templates/
 forms/
+*.gdoc
+desktop.ini
