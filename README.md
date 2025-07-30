@@ -1,18 +1,25 @@
-# Assessing Current and Future Ocean Acidification and Climate Vulnerabilities Along the Hawaiian Archipelago
+# Assessing Current and Future Ocean Acidification and Climate
+Vulnerabilities Along the Hawaiian Archipelago
 
-<p align="center">
-  <img src="assets/img/logos/oap_logo.png" alt="NOAA OAP logo" height="80" />
-  <img src="assets/img/logos/nrem_logo.png" alt="NREM logo"  height="80" />
-  <img src="assets/img/logos/soest_logo.png" alt="SOEST logo" height="80" />
-  <img src="assets/img/logos/uh_logo.png"   alt="UH logo"   height="80" />
-</p>
 
-<center>
-Funded by NOAA Ocean Acidification Program (Grant NOAA-OAR-OAP-2020-2006333)
+<div align="center">
+
+<img src="assets/img/logos/oap_logo.png" alt="NOAA OAP logo" height="80" />
+<img src="assets/img/logos/nrem_logo.png" alt="NREM logo" height="80" />
+<img src="assets/img/logos/soest_logo.png" alt="SOEST logo" height="80" />
+<img src="assets/img/logos/uh_logo.png"   alt="UH logo"   height="80" />
+
+</div>
+
+<div align="center">
+
+Funded by NOAA Ocean Acidification Program (Grant
+NOAA-OAR-OAP-2020-2006333)
 
 © 2025 University of Hawaiʻi at Mānoa. All rights reserved.  
 Developed by [Oleson Lab Team](https://www.olesonlab.org/)
 
-Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> |
-Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-</center>
+Designed by [BootstrapMade](https://bootstrapmade.com/) \| Distributed
+by [ThemeWagon](https://themewagon.com)
+
+</div>
