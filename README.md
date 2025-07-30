@@ -1,6 +1,6 @@
-# Assessing Current and Future Ocean Acidification and Climate
-Vulnerabilities Along the Hawaiian Archipelago
 
+
+# Assessing Current and Future Ocean Acidification and Climate Vulnerabilities Along the Hawaiian Archipelago
 
 <div align="center">
 
@@ -10,6 +10,8 @@ Vulnerabilities Along the Hawaiian Archipelago
 <img src="assets/img/logos/uh_logo.png"   alt="UH logo"   height="80" />
 
 </div>
+
+<br>
 
 <div align="center">
 
