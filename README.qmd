@@ -5,7 +5,7 @@ format:
 
 # Assessing Current and Future Ocean Acidification and Climate Vulnerabilities Along the Hawaiian Archipelago
 
-<div align="center">
+<br><div align="center">
   <img src="assets/img/logos/oap_logo.png" alt="NOAA OAP logo" height="80" />
   <img src="assets/img/logos/nrem_logo.png" alt="NREM logo" height="80" />
   <img src="assets/img/logos/soest_logo.png" alt="SOEST logo" height="80" />

@@ -2,6 +2,8 @@
 
 # Assessing Current and Future Ocean Acidification and Climate Vulnerabilities Along the Hawaiian Archipelago
 
+<br>
+
 <div align="center">
 
 <img src="assets/img/logos/oap_logo.png" alt="NOAA OAP logo" height="80" />
