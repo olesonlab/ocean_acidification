@@ -1,0 +1,1159 @@
+/**
+* Template Name: MyResume
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #0563bb;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #45505b;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #0563bb;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #0563bb;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+p {
+  font-size: 17px;
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  z-index: 997;
+  min-width: 200px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    width: 400px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    /* font-size: 12px; */
+    border-radius: 50px;
+    background: color-mix(in srgb, var(--default-color), transparent 92%);
+    height: 40px;
+    width: 85%;
+    overflow: hidden;
+    transition: 0.3s;
+    justify-content: center;
+    gap: 10px;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .header~main {
+    margin-left: 160px;
+  }
+
+  .header~main .hero {
+    margin-left: -160px;
+    width: 100vw;
+  }
+}
+
+.header.header-show {
+  left: 0;
+}
+
+.header .header-toggle {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+.header .header-toggle:hover {
+  color: var(--contrast-color);
+  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  width: 370px;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  font-family: var(--nav-font);
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  border-radius: 50px;
+  border: 1px solid var(--nav-color);
+  background: #fff;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+  justify-content: center;
+  gap: 10px;
+  text-align: center !important;
+}
+
+.navmenu a i,
+.navmenu a:focus i {
+  font-size: 20px;
+}
+
+.navmenu a span,
+.navmenu a:focus span {
+  padding: 0 5px 0 7px;
+}
+
+@media (min-width: 992px) {
+
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 56px;
+    height: 40px;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .navmenu a span,
+  .navmenu a:focus span {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) {
+
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 56px;
+    height: 45px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navmenu a span,
+  .navmenu a:focus span {
+    display: none;
+  }
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover>a {
+  color: var(--contrast-color);
+  background: var(--nav-hover-color);
+}
+
+.navmenu a:hover,
+.navmenu li:hover>a {
+  max-width: 100%;
+  color: var(--contrast-color);
+}
+
+.navmenu a:hover span,
+.navmenu li:hover>a span {
+  display: block;
+}
+
+/* 1) Make the fish img the same 20×20 size as your <i> icons, with a smooth filter transition */
+.navmenu a img.navicon[src*="fish.svg"] {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: filter 0.2s ease-in-out;
+}
+
+/* 2) On hover or when that link is .active, flip it to pure white with its original stroke weight */
+.navmenu a:hover img.navicon[src*="fish.svg"],
+.navmenu a.active img.navicon[src*="fish.svg"] {
+  filter: brightness(1) saturate(100%) invert(1);
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.site-footer {
+  padding: 40px 0;
+  background-color: var(--background-color);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  color: var(--default-color);
+}
+
+/* Logos */
+.footer-logos {
+  gap: 2rem;
+}
+
+.footer-logo {
+  max-height: 84px;
+  object-fit: contain;
+}
+
+.footer-logo--soest {
+  /* override just for the SOEST logo */
+  max-height: none;
+  height: 133px !important;
+  width: auto;
+}
+
+/* Project info */
+.footer-info p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+/* Quick links */
+.footer-links a {
+  color: var(--nav-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Social icons */
+.footer-social a {
+  margin: 0 0.5rem;
+  color: var(--nav-color);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--accent-color);
+}
+
+/* Theme credits */
+.credits {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
+.credits a {
+  color: var(--default-color);
+  text-decoration: underline dotted;
+  transition: opacity 0.3s;
+}
+
+.credits a:hover {
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––––  
+ GLightbox
+––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* 1) Slide wrapper: subtract 20px total (10px top + 10px bottom) from 100vh */
+.glightbox-clean .gslide {
+  background: var(--surface-color) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: none !important;
+  padding: 1rem !important;
+  margin: 10px auto !important;
+  width: 90vw !important;
+  max-width: 90vw !important;
+  height: calc(100vh - 20px) !important;
+  max-height: calc(100vh - 20px) !important;
+}
+
+/* 2) Media container fills its parent exactly */
+.glightbox-clean .gslide-media {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 3) Image letterboxes to fit entirely: */
+.glightbox-clean .gslide-media img {
+  display: block !important;
+  width: auto !important;
+  height: calc(100vh - 20px) !important;
+  max-height: calc(100vh - 20px) !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  padding: 0.5rem;
+}
+
+/* 4) Hide any remaining caption: */
+.glightbox-clean .gslide-description {
+  display: none !important;
+}
+
+/* 5) Kill any leftover shadows or borders: */
+.glightbox-clean .gslide,
+.glightbox-clean .gslide-inner,
+.glightbox-clean .gslide-media {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.page-title h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/*--------------------------------------------------------------
+# Section Authors
+--------------------------------------------------------------*/
+
+.section-authors {
+  font-size: 18px;
+  /* 18px; sits nicely under a 40px title */
+  font-weight: 400;
+  /* normal weight byline */
+  color: var(--accent-color);
+  margin-top: 0;
+  /* pull it closer to the title */
+  /* margin-bottom: 1rem; */
+  /* space before the next section */
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+}
+
+.hero p span {
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.hero .social-links {
+  margin-top: 25px;
+}
+
+.hero .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Acknowledgements Section
+--------------------------------------------------------------*/
+/* Logos flex-row */
+.ack-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ack-logo {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Force the SOEST logo up to 150px tall */
+.soest-logo {
+  /* remove the old cap */
+  max-height: none !important;
+  /* set your desired height */
+  height: 190px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+.ack-logos .col-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* optional, centers horizontally too */
+}
+
+/* Grant text */
+.ack-support {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sub-sections */
+.ack-section {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ack-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ack-list li {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive: stack logos on mobile */
+@media (max-width: 576px) {
+  .ack-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--accent-color);
+  line-height: 0;
+}
+
+/*--------------------------------------------------------------
+# Report Video Section
+--------------------------------------------------------------*/
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.video-wrapper video,
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item+.info-item {
+  margin-top: 40px;
+}
+
+.contact .info-item i {
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .info-item:hover i {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+  height: 100%;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+/*--------------------------------------------------------------
+  Split-Section (Grid) — two equal columns, auto-stack on mobile
+--------------------------------------------------------------*/
+.split-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "text img";
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+/* reverse order on desktop */
+.split-section.reverse {
+  grid-template-areas: "img text";
+}
+
+/* stack both normal & reversed on narrow screens */
+@media (max-width: 768px) {
+
+  .split-section,
+  .split-section.reverse {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "text";
+  }
+}
+
+/* place-holders for the two areas */
+.split-section .split-text {
+  grid-area: text;
+}
+
+/* give the “card” some breathing room */
+.split-section .split-image {
+  padding: 1rem;
+  /* space inside border */
+  background: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  /* let shadows show */
+}
+
+/* ensure images never bleed out & letterbox if aspect mismatch */
+.split-section .split-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  padding-top: 0.5rem;
+}
+
+/* make figcaption a positioned parent */
+.split-section .split-image figcaption {
+  position: relative;
+  display: block;
+  max-width: 468px;
+  margin: 0.75rem auto 0;
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;         /* extra bottom padding for your absolute source */
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 80%);
+
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+
+  text-align: justify;
+  text-align-last: center;
+  hyphens: auto;
+}
+
+/* absolutely pin the source to the bottom-right of the caption box */
+.split-section .split-image figcaption .figure-source {
+  position: absolute;
+  right: 0.5rem;                   /* tweak to align under the image’s right padding */
+  bottom: -0.15rem;
+  text-align: right;               
+  font-size: 0.75rem;              /* your desired size */
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.split-image {
+  position: relative;
+}
+
+/* the title overlay at the top */
+.figure-title-overlay {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.25rem 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--heading-color);
+  z-index: 2;
+}
+
+/* push the image down so it’s not hidden under the title */
+.split-section .split-image a {
+  display: block;
+  margin-top: 1.5rem;
+  /* adjust to match the height of your title bar */
+}
+
+/* the little “expand” badge */
+.split-image .expand-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 2;
+}
+
+.split-image .expand-icon i {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+}
+
+/*----------------------------------------------------------------------*/
+/* Resources Section                                                    */
+/*----------------------------------------------------------------------*/
+.explore-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.explore-section .section-title h2 {
+  margin-bottom: 1rem;
+}
+
+/* citation styling */
+.explore-section .citation {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--default-color);
+}
+
+/* QR Cards Row: use flexbox & center items */
+.explore-content .qr-grid {
+  /* remove Bootstrap’s row side‐margins */
+  margin-left: 0;
+  margin-right: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  /* spacing between items */
+}
+
+/* force every “.qr-item” to be 280px wide, regardless of screen size */
+.explore-content .qr-item {
+  flex: 0 0 auto;
+  /* ignore the Bootstrap col-* flex rules */
+  width: 280px;
+  /* whatever fixed width you prefer */
+}
+
+/* card around each QR code */
+.qr-card {
+  border: none;
+  background: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.qr-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.qr-card .card-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.qr-card .card-text {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.qr-card a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.qr-card a:hover {
+  text-decoration: underline;
+}
+
