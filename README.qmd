@@ -13,7 +13,7 @@ format:
 </div><br>
 
 <div align="center">
-Funded by NOAA Ocean Acidification Program (Grant NOAA-OAR-OAP-2020-2006333)
+This work is the result of research funded by the National Oceanic and Atmospheric Administration's Ocean Acidification Program under award <strong>NA21OAR0170191</strong> to the University of Hawaiʻi at Mānoa.
 
 © 2025 University of Hawaiʻi at Mānoa. All rights reserved.  
 Developed by [Oleson Lab Team](https://www.olesonlab.org/)
