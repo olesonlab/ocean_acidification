@@ -227,3 +227,96 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+(function(){
+  const grid = document.getElementById('authorsGrid');
+  if(!grid) return;
+
+  // Name → Email map (keys must match the <h6 class="name"> text exactly)
+  const EMAILS = {
+    "Dr. Christopher L. Sabine": "csabine@hawaii.edu",
+    "Dr. Brian Powell": "powellb@hawaii.edu",
+    "Dr. Kirsten L.L. Oleson": "koleson@hawaii.edu",
+    "Dr. Malte Stuecker": "stuecker@hawaii.edu",
+    "Lucia Hošeková": "hosekova@hawaii.edu",
+    "Tobias Friedrich": "tobiasf@hawaii.edu",
+    "Lansing Perng": "lyperng@hawaii.edu",
+    "Mariska Weijerman": "mariska.weijerman@noaa.gov",
+    "Kirsten Leong": "kirsten.leong@noaa.gov",
+    "Elizabeth Fulton": "elizabeth.fulton@csiro.au",
+    "Ashley Lowe Mackenzie": "alowemac@hawaii.edu",
+    "Anders Dugstad": "anders.dugstad@nmbu.no",
+    "Carlo Fezzi": "carlo.fezzi@unitn.it",
+    "Alemarie Ceria": "alemarie@hawaii.edu"
+  };
+
+  const cards = Array.from(grid.querySelectorAll('.person-card'));
+  const q = document.getElementById('authorSearch');
+  const role = document.getElementById('roleFilter');
+  const team = document.getElementById('teamFilter');
+  const count = document.getElementById('authorCount');
+  const empty = document.getElementById('ackEmpty');
+
+  function makeEmailBtn(email, name){
+    const a = document.createElement('a');
+    a.className = 'email-btn';
+    a.href = 'mailto:' + encodeURIComponent(email);
+    a.setAttribute('aria-label', `Email ${name}`);
+    // inline SVG envelope so we don't rely on any icon library
+    a.innerHTML = `
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2
+        2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12
+        13 4 6.01V6h16ZM4 18V8.24l7.4 6.17a1 1 0 0 0 1.2 0L20
+        8.24V18H4Z"></path>
+      </svg>
+      <span>Email</span>
+    `;
+    return a;
+  }
+
+  function injectEmailButtons(){
+    cards.forEach(card => {
+      if (card.querySelector('.email-btn')) return; // already added
+      const nameEl = card.querySelector('.name');
+      if (!nameEl) return;
+      const name = nameEl.textContent.trim();
+      const email = EMAILS[name];
+      if (!email) return;
+
+      let actions = card.querySelector('.card-actions');
+      if (!actions){
+        actions = document.createElement('div');
+        actions.className = 'card-actions';
+        card.appendChild(actions);
+      }
+      actions.appendChild(makeEmailBtn(email, name));
+    });
+  }
+
+  function matches(card){
+    const txt = (card.dataset.index || '').toLowerCase();
+    const roleOK = !role.value || (card.dataset.role === role.value);
+    const teamOK = !team.value || (card.dataset.teams || '').includes(team.value);
+    const qOK = !q.value || txt.includes(q.value.trim().toLowerCase());
+    return roleOK && teamOK && qOK;
+  }
+
+  function update(){
+    let visible = 0;
+    cards.forEach(c => {
+      const show = matches(c);
+      c.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    if (count) count.textContent = visible;
+    if (empty) empty.hidden = visible !== 0;
+  }
+
+  // Do it!
+  injectEmailButtons();
+  q.addEventListener('input', update);
+  role.addEventListener('change', update);
+  team.addEventListener('change', update);
+  update();
+})();

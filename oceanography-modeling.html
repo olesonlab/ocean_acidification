@@ -55,13 +55,13 @@
         <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="oceanography-modeling.html" class="active"><i class="bi bi-water navicon"></i><span>Oceanography
               Modeling</span></a></li>
-        <li><a href="ecological-modeling.html"><img src="assets/img/fish.svg" alt="Fish Icon"
-              class="navicon" /></i><span>Ecological Modeling with Atlantis</span></a></li>
+        <li><a href="ecosystem-modeling.html"><img src="assets/img/fish.svg" alt="Fish Icon"
+              class="navicon" /></i><span>Ecosystem Modeling with Atlantis</span></a></li>
         <li><a href="economic-impact.html"><i class="bi bi-bar-chart-line navicon"></i><span>Economic Impact</span></a>
         </li>
         <li><a href="spatial-vulnerability-assessment.html"><i class="bi bi-people navicon"></i><span>Spatial
               Vulnerability Assessment</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <li><a href="contact-us.html"><i class="bi bi-envelope navicon"></i><span>Contact Us</span></a></li>
       </ul>
     </nav>
     <!-- Nav Menu End -->
@@ -110,7 +110,7 @@
           </div>
           <figure class="split-image">
             <!-- Image Title Overlay -->
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Major Ocean Gyres of the Pacific</div></center>
 
             <a href="assets/img/lucia/north_pacific_gyre.png" class="glightbox" data-gallery="maps"
               data-title="North Pacific Subtropical Gyre currents">
@@ -120,7 +120,15 @@
 
             <!-- Source Caption -->
             <figcaption>
-              <div class="figure-source">Data Source: Oceans of Data Institute, https://oceantracks.org</div>
+              <!-- Formal caption text -->
+              <div class="figure-caption">
+                Figure 1: Major current systems across the Pacific Ocean. The map highlights the interconnected gyres that drive large-scale circulation, situating the North Pacific Subtropical Gyre within a broader global context.
+              </div>
+              <!-- Smaller data-source text, bottom right -->
+              <br><span class="figure-source">
+                Source: Oceans of Data Institute – <a href="https://oceantracks.org" target="_blank"
+                  rel="noopener">Ocean Tracks</a>
+              </span>
             </figcaption>
           </figure>
         </section>
@@ -130,7 +138,7 @@
         <section class="split-section reverse" data-aos="fade-up">
           <figure class="split-image">
             <!-- Image Title Overlay -->
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Bathymetry and Current Dynamics in the Main Hawaiian Islands</div></center>
 
             <a href="assets/img/lucia/ocean_bathymetry.png" class="glightbox" data-gallery="maps"
               data-title="MHI bathymetry & upwelling patterns">
@@ -147,7 +155,11 @@
                 Current, HLCC - Hawaii Lee Countercurrent, NEC - North Equatorial Current.
               </div>
               <!-- Smaller data-source text, bottom right -->
-              <div class="figure-source">Data Source: [Insert Data Source Here]</div>
+              <br><br><span class="figure-source">
+                Source: <a href="https://doi.org/10.1029/2024JC021903" target="_blank" rel="noopener">
+                  Friedrich et al. (2024),<br> Journal of Geophysical Research: Oceans
+                </a>
+              </span>
             </figcaption>
           </figure>
           <div class="split-text">
@@ -165,19 +177,22 @@
         <!-- Fringing Coral Reefs Section Start -->
         <section class="split-section" data-aos="fade-up">
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Nearshore Coral Reef Habitats of the Main Hawaiian Islands</div></center>
 
             <a href="assets/img/lucia/fringing_reefs.png" class="glightbox" data-gallery="maps"
               data-title="Fringing Coral Reefs">
-              <img src="assets/img/lucia/fringing_reefs.png" alt="Fringing coral reefs around Hawai‘i">
+              <img src="assets/img/lucia/fringing_reefs.png" alt="Fringing coral reefs around Hawai‘i"><br>
               <span class="expand-icon"><i class="bi bi-arrows-fullscreen"></i></span>
             </a>
 
             <figcaption>
               <div class="figure-caption">
-                Figure 3: Fringing coral reefs around the shallow coastlines of the Main Hawaiian Islands.
+                Figure 3: Distribution of fringing coral reefs around Oʻahu, with reef locations highlighted for the broader Main Hawaiian Islands..
               </div>
-              <div class="figure-source">Data Source: [Insert Data Source Here]</div>
+              <!-- Smaller data-source text, bottom right -->
+              <br><span class="figure-source">
+                Source: <a href="https://allencoralatlas.org/" target="_blank" rel="noopener">Allen Coral Atlas</a>
+              </span>
             </figcaption>
           </figure>
           <div class="split-text">
@@ -195,23 +210,24 @@
         <!-- ROMS + COBALT Downscaling Section Start -->
         <section class="split-section reverse" data-aos="fade-up">
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Improved Spatial Resolution with Regional Modeling</div></center>
 
             <a href="https://raw.githubusercontent.com/loweas/OAP/main/assets/img/images/lucia/cesm2_roms_cobalt_models.gif"
               class="glightbox" data-gallery="maps" data-title="Dynamically downscaled ROMS/COBALT projections">
               <img
                 src="https://raw.githubusercontent.com/loweas/OAP/main/assets/img/images/lucia/cesm2_roms_cobalt_models.gif"
                 alt="Global vs downscaled OA projections" />
-              <span class="expand-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+              <br><span class="expand-icon"><i class="bi bi-arrows-fullscreen"></i></span>
             </a>
 
             <figcaption>
               <div class="figure-caption">
-                Friedrich et al. 2024: Submesoscale-permitting physical/biogeochemical future simulations for MHI,
-                accepted.<br><br>
-                Liu et al. 2023: Climate downscaling for regional models with a neural network: A Hawaiian example.
+                Figure 4: Comparison of sea surface temperature simulations for the MHI. The coarse-resolution CESM model (left) misses finer coastal detail, while the downscaled ROMS simulation (right) captures island landmasses and surrounding ocean features more accurately (Friedrich et al., 2024; Liu et al., 2023).
               </div>
-              <div class="figure-source">Data Source: [Insert Data Source Here]</div>
+              <br><span class="figure-source">
+                Source: <a href="https://www.dkrz.de/en/about-en" target="_blank" rel="noopener">German Climate
+                  Computing Center</a>
+              </span>
             </figcaption>
           </figure>
           <div class="split-text">
@@ -244,7 +260,7 @@
             </p>
           </div>
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Emission Pathways in Shared Socioeconomic Pathways (SSPs)</div></center>
 
             <a href="assets/img/lucia/ssps_of_interest.png" class="glightbox" data-gallery="maps"
               data-title="SSP CO₂ trajectories">
@@ -254,9 +270,11 @@
 
             <figcaption>
               <div class="figure-caption">
-                Figure: SSP CO₂ trajectories.
+                Figure 5: Projected global CO₂ concentrations for three SSP scenarios, illustrating contrasting futures of mitigation (SSP1-2.6), stabilization (SSP2-4.5), and high emissions (SSP3-7.0).
               </div>
-              <div class="figure-source">Data Source: [Insert Data Source Here]</div>
+              <span class="figure-source">
+                Source: After O’Neill et al., 2016 &copy; DKRZ
+              </span>
             </figcaption>
           </figure>
         </section>
@@ -266,7 +284,7 @@
         <!-- Ωₐ, pH & SIR Trends Section Start -->
         <section class="split-section reverse" data-aos="fade-up">
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Projected Declines in Ocean Acidification Indices</div></center>
 
             <a href="assets/img/lucia/arag_sat_ph_sir_trends.png" class="glightbox" data-gallery="maps"
               data-title="Ωₐ, pH & SIR trends">
@@ -276,11 +294,19 @@
 
             <figcaption>
               <div class="figure-caption">
-                Figure: Ωₐ, pH &amp; SIR trends.
+                Figure 6: Mean nearshore (land-adjacent grid cells) upper 30 m aragonite saturation
+                state (a), pH (b) and substrate-to-inhibitor ratio (in
+                mol(HCO<sub>3</sub><sup>−</sup>)/µmol(H<sup>+</sup>), c) for the
+                main Hawaiian Islands projected for the SSP3-7.0, SSP2-4.5 and SSP1-2.6 scenarios. The
+                shaded areas represent the range of values across individual grid cells at that time. The
+                SSP3-7.0 line corresponds to the mean of three ensemble members, and the range represents
+                the minimum and maximum value of nearshore grid cells of the ensemble mean.
               </div>
-              <div class="figure-source">
-                <i>[Insert Data Source Here]</i>
-              </div>
+              <br><br><span class="figure-source">
+                Source: <a href="https://doi.org/10.1029/2024JC021903" target="_blank" rel="noopener">
+                  Friedrich et al. (2024),<br> Journal of Geophysical Research: Oceans
+                </a>
+              </span>
             </figcaption>
           </figure>
           <div class="split-text">
@@ -313,7 +339,7 @@
             </p>
           </div>
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Climate Novelty in Ocean Conditions</div></center>
 
             <a href="assets/img/lucia/novelty_metric_concept.png" class="glightbox" data-gallery="maps"
               data-title="Novelty metric concept">
@@ -323,11 +349,11 @@
 
             <figcaption>
               <div class="figure-caption">
-                Figure: Novelty metric concept.
+                Figure 7: Example of a climate novelty metric showing departures from historical variability, with thresholds (2σ, 4σ) indicating when future ocean chemistry moves beyond past experience.
               </div>
-              <div class="figure-source">
+              <!-- <div class="figure-source">
                 <i>[Insert Data Source Here]</i>
-              </div>
+              </div> -->
             </figcaption>
           </figure>
         </section>
@@ -337,7 +363,7 @@
         <!-- Novelty Results Section Start -->
         <section class="split-section reverse" data-aos="fade-up">
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Projected Novelty in Ocean Acidification Indices Across Emission Scenarios</div></center>
 
             <a href="assets/img/lucia/novelty_metric_results.jpg" class="glightbox" data-gallery="maps"
               data-title="Ωₐ &amp; SIR novelty results">
@@ -347,11 +373,19 @@
 
             <figcaption>
               <div class="figure-caption">
-                Figure: Ωₐ &amp; SIR novelty results.
+                Figure 8: Mean nearshore (land-adjacent grid cells) upper 30 m Ω<sub>A</sub> (a) and
+                substrate-to-inhibitor
+                ratio (in mol(HCO<sub>3</sub><sup>−</sup>)/µmol(H<sup>+</sup>), b) novelty for the main Hawaiian Islands
+                projected
+                under the SSP1-2.6, SSP2-4.5 and SSP3-7.0 scenarios. The shaded areas represent the range of values
+                across individual grid cells at that time. The SSP3-7.0 line corresponds to the mean of three ensemble
+                members, and the range represents the minimum and maximum novelty of the ensemble mean.
               </div>
-              <div class="figure-source">
-                <i>[Insert Data Source Here]</i>
-              </div>
+              <br><br><span class="figure-source">
+                Source: <a href="https://doi.org/10.1029/2024JC021903" target="_blank" rel="noopener">
+                  Friedrich et al. (2024),<br> Journal of Geophysical Research: Oceans
+                </a>
+              </span>
             </figcaption>
           </figure>
           <div class="split-text">
@@ -387,7 +421,7 @@
             </p>
           </div>
           <figure class="split-image">
-            <div class="figure-title-overlay">[Insert Image Title Here]</div>
+            <center><div class="figure-title-overlay">Spatial Patterns of Novelty in Nearshore Waters</div></center>
 
             <a href="assets/img/lucia/spatial_novelty_patterns.jpg" class="glightbox" data-gallery="maps"
               data-title="Spatial novelty patterns">
@@ -397,11 +431,21 @@
 
             <figcaption>
               <div class="figure-caption">
-                Figure: Spatial novelty patterns.
+                Figure 9: Mean ensemble novelty of Ω<sub>A</sub> (a,c) and substrate-to-inhibitor ratio (b,d) for nearshore grid
+                cells in
+                SSP3-7.0, averaged between 2050–2055 (a,b) and 2095–2100 (c,d). Note that separate color scales are
+                used for each variable and time period to preserve the spatial patterns, given the narrow differences in
+                novelty value ranges. These spatial patterns highlight areas of elevated novelty resulting from the
+                contrasting
+                responses of Ω<sub>A</sub> and substrate-to-inhibitor ratio to dissolved inorganic carbon and
+                temperature,
+                as discussed in the text.
               </div>
-              <div class="figure-source">
-                <i>[Insert Data Source Here]</i>
-              </div>
+              <br><br><span class="figure-source">
+                Source: <a href="https://doi.org/10.1029/2024JC021903" target="_blank" rel="noopener">
+                  Friedrich et al. (2024),<br> Journal of Geophysical Research: Oceans
+                </a>
+              </span>
             </figcaption>
           </figure>
         </section>
@@ -480,7 +524,7 @@
                       Presentation Slides
                     </h5>
                     <p class="card-text">
-                      <a href="assets/slides/osm_hosekova.pdf" target="_blank" rel="noopener">
+                      <a href="assets/slides/hosekova_oceanography_modeling.pdf" target="_blank" rel="noopener">
                         View slides (PDF)
                       </a>
                     </p>
@@ -501,11 +545,11 @@
   </main>
   <!-- Main Content End -->
 
-  <!-- Footer Section Start -->
+  <!-- Footer Section -->
   <footer id="footer" class="footer position-relative light-background site-footer">
     <div class="container">
 
-      <!-- Partner & Funder Logos Start -->
+      <!-- Partner & Funder Logos -->
       <div class="footer-logos d-flex flex-wrap justify-content-center align-items-center mb-4" data-aos="fade-up"
         data-aos-delay="100">
         <img src="assets/img/logos/oap_logo.png" alt="NOAA OAP logo" class="footer-logo">
@@ -514,52 +558,33 @@
         <img src="assets/img/logos/uh_logo.png" alt="UH logo" class="footer-logo">
         <!-- add additional sponsor logos here -->
       </div>
-      <!-- Partner & Funder Logos End -->
 
-      <!-- Project Title & Grant Start -->
+      <!-- Project Title & Grant -->
       <div class="footer-info text-center mb-3">
         <p class="mb-1">
-          <strong>Assessing Current and Future Ocean Acidification and Climate Vulnerabilities Along the Hawaiian
-            Archipelago</strong><br>
-          Funded by NOAA Ocean Acidification Program (Grant NOAA-OAR-OAP-2020-2006333)
+          This work is the result of research funded by the National Oceanic and Atmospheric Administration's Ocean
+          Acidification Program under award <strong>NA21OAR0170191</strong> to the University of Hawaiʻi at Mānoa.
         </p>
         <p class="mb-0">© 2025 University of Hawaiʻi at Mānoa. All rights reserved.</p>
         <p class="mb-0">Developed by <a href="https://www.olesonlab.org/" target="_blank">Oleson Lab Team</a></p>
       </div>
-      <!-- Project Title & Grant End -->
 
-      <!-- Quick Links Start -->
+      <!-- Quick Links -->
       <nav class="footer-links d-flex flex-wrap justify-content-center gap-3 mb-3" aria-label="Footer nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#acknowledgements">Acknowledgements</a>
+        <a href="#about">About</a>
+        <a href="#acknowledgements">Acknowledgements</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/olesonlab/ocean_acidification" target="_blank">GitHub Repo</a>
       </nav>
-      <!-- Quick Links End -->
 
-      <!-- Social Media Start -->
-      <div class="footer-social text-center mb-3" aria-label="Social media links">
-        <a href="https://twitter.com/YourHandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://facebook.com/YourPage" target="_blank" aria-label="Facebook"><i
-            class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/YourHandle" target="_blank" aria-label="Instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/in/YourPage" target="_blank" aria-label="LinkedIn"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/your-repo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      </div>
-      <!-- Social Media End -->
-
-      <!-- Theme Credits Start -->
+      <!-- Theme Credits -->
       <div class="credits text-center">
         Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> |
         Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
       </div>
-      <!-- Theme Credits End -->
 
     </div>
-  </footer>
-  <!-- Footer Section End -->
+  </footer><!-- /Footer Section -->
 
   <!-- Scroll Top Start -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
