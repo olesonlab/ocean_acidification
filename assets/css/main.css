@@ -12,81 +12,81 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff;
-  /* Background color for the entire website, including individual sections */
-  --default-color: #272829;
-  /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b;
-  /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb;
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff;
-  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff;
-  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+    --background-color: #ffffff;
+    /* Background color for the entire website, including individual sections */
+    --default-color: #272829;
+    /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #45505b;
+    /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #0563bb;
+    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff;
+    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff;
+    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;
-  /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb;
-  /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff;
-  /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff;
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529;
-  /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb;
-  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+    --nav-color: #45505b;
+    /* The default color of the main navmenu links */
+    --nav-hover-color: #0563bb;
+    /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff;
+    /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff;
+    /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #212529;
+    /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #0563bb;
+    /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
+    --background-color: #f9f9f9;
+    --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+    --background-color: #060606;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #ffffff;
 }
 
 /* Smooth scroll */
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
 }
 
 a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: 0.3s;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
 }
 
 h1,
@@ -95,115 +95,115 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-family: var(--heading-font);
 }
 
 p {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+    display: none;
+    background: #df1529;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
 }
 
 .php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+    display: none;
+    color: #ffffff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
 }
 
 .php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
+    display: none;
+    background: var(--surface-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
 }
 
 .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--accent-color);
+    border-top-color: var(--surface-color);
+    animation: php-email-form-loading 1s linear infinite;
 }
 
 @keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 0 15px;
-  transition: all ease-in-out 0.3s;
-  overflow-y: auto;
-  z-index: 997;
-  min-width: 200px;
+    color: var(--default-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 15px;
+    transition: all ease-in-out 0.3s;
+    overflow-y: auto;
+    z-index: 997;
+    min-width: 200px;
 }
 
 @media (max-width: 1199px) {
-  .header {
-    width: 400px;
-    left: -100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 6px;
-  }
+    .header {
+        width: 400px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 6px;
+    }
 
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--nav-color);
-    font-family: var(--nav-font);
-    display: flex;
-    align-items: center;
-    padding: 10px 18px;
-    margin-bottom: 8px;
-    /* font-size: 12px; */
-    border-radius: 50px;
-    background: color-mix(in srgb, var(--default-color), transparent 92%);
-    height: 40px;
-    width: 85%;
-    overflow: hidden;
-    transition: 0.3s;
-    justify-content: center;
-    gap: 10px;
-    text-align: center !important;
-  }
+    .navmenu a,
+    .navmenu a:focus {
+        color: var(--nav-color);
+        font-family: var(--nav-font);
+        display: flex;
+        align-items: center;
+        padding: 10px 18px;
+        margin-bottom: 8px;
+        /* font-size: 12px; */
+        border-radius: 50px;
+        background: color-mix(in srgb, var(--default-color), transparent 92%);
+        height: 40px;
+        width: 85%;
+        overflow: hidden;
+        transition: 0.3s;
+        justify-content: center;
+        gap: 10px;
+        text-align: center !important;
+    }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+/* @media (min-width: 1200px) and (max-width: 1600px) {
   .header~main {
     margin-left: 160px;
   }
@@ -212,283 +212,283 @@ p {
     margin-left: -160px;
     width: 100vw;
   }
-}
+} */
 
 .header.header-show {
-  left: 0;
+    left: 0;
 }
 
 .header .header-toggle {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
-  transition: background-color 0.3s;
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    transition: background-color 0.3s;
 }
 
 .header .header-toggle:hover {
-  color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+    color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 .navmenu {
-  padding: 0;
-  z-index: 9997;
+    padding: 0;
+    z-index: 9997;
 }
 
 .navmenu ul {
-  list-style: none;
-  padding: 0 0 0 0;
-  margin: 0;
-  width: 370px;
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0;
+    width: 370px;
 }
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
-  font-family: var(--nav-font);
-  display: flex;
-  align-items: center;
-  padding: 10px 18px;
-  margin-bottom: 8px;
-  border-radius: 50px;
-  border: 1px solid var(--nav-color);
-  background: #fff;
-  height: 56px;
-  width: 100%;
-  overflow: hidden;
-  transition: 0.3s;
-  justify-content: center;
-  gap: 10px;
-  text-align: center !important;
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    border-radius: 50px;
+    border: 1px solid var(--nav-color);
+    background: #fff;
+    height: 56px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+    justify-content: center;
+    gap: 10px;
+    text-align: center !important;
 }
 
 .navmenu a i,
 .navmenu a:focus i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .navmenu a span,
 .navmenu a:focus span {
-  padding: 0 5px 0 7px;
+    padding: 0 5px 0 7px;
 }
 
 @media (min-width: 992px) {
 
-  .navmenu a,
-  .navmenu a:focus {
-    max-width: 56px;
-    height: 40px;
-    width: 100%;
-    font-size: 0.95rem;
-  }
+    .navmenu a,
+    .navmenu a:focus {
+        max-width: 56px;
+        height: 40px;
+        width: 100%;
+        font-size: 0.95rem;
+    }
 
-  .navmenu a span,
-  .navmenu a:focus span {
-    display: none;
-  }
+    .navmenu a span,
+    .navmenu a:focus span {
+        display: none;
+    }
 }
 
 @media (min-width: 100px) {
 
-  .navmenu a,
-  .navmenu a:focus {
-    max-width: 56px;
-    height: 45px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+    .navmenu a,
+    .navmenu a:focus {
+        max-width: 56px;
+        height: 45px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .navmenu a span,
-  .navmenu a:focus span {
-    display: none;
-  }
+    .navmenu a span,
+    .navmenu a:focus span {
+        display: none;
+    }
 }
 
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus,
 .navmenu li:hover>a {
-  color: var(--contrast-color);
-  background: var(--nav-hover-color);
+    color: var(--contrast-color);
+    background: var(--nav-hover-color);
 }
 
 .navmenu a:hover,
 .navmenu li:hover>a {
-  max-width: 100%;
-  color: var(--contrast-color);
+    max-width: 100%;
+    color: var(--contrast-color);
 }
 
 .navmenu a:hover span,
 .navmenu li:hover>a span {
-  display: block;
+    display: block;
 }
 
 /* 1) Make the fish img the same 20×20 size as your <i> icons, with a smooth filter transition */
 .navmenu a img.navicon[src*="fish.svg"] {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  transition: filter 0.2s ease-in-out;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: filter 0.2s ease-in-out;
 }
 
 /* 2) On hover or when that link is .active, flip it to pure white with its original stroke weight */
 .navmenu a:hover img.navicon[src*="fish.svg"],
 .navmenu a.active img.navicon[src*="fish.svg"] {
-  filter: brightness(1) saturate(100%) invert(1);
+    filter: brightness(1) saturate(100%) invert(1);
 }
 
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .site-footer {
-  padding: 40px 0;
-  background-color: var(--background-color);
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  color: var(--default-color);
+    padding: 40px 0;
+    background-color: var(--background-color);
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    color: var(--default-color);
 }
 
 /* Logos */
 .footer-logos {
-  gap: 2rem;
+    gap: 2rem;
 }
 
 .footer-logo {
-  max-height: 84px;
-  object-fit: contain;
+    max-height: 84px;
+    object-fit: contain;
 }
 
 .footer-logo--soest {
-  /* override just for the SOEST logo */
-  max-height: none;
-  height: 133px !important;
-  width: auto;
+    /* override just for the SOEST logo */
+    max-height: none;
+    height: 133px !important;
+    width: auto;
 }
 
 /* Project info */
 .footer-info p {
-  margin: 0.25rem 0;
-  line-height: 1.4;
+    margin: 0.25rem 0;
+    line-height: 1.4;
 }
 
 /* Quick links */
 .footer-links a {
-  color: var(--nav-color);
-  text-decoration: none;
-  transition: color 0.3s;
+    color: var(--nav-color);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Theme credits */
 .credits {
-  font-size: 0.75rem;
-  opacity: 0.6;
-  margin-top: 1rem;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 1rem;
 }
 
 .credits a {
-  color: var(--default-color);
-  text-decoration: underline dotted;
-  transition: opacity 0.3s;
+    color: var(--default-color);
+    text-decoration: underline dotted;
+    transition: opacity 0.3s;
 }
 
 .credits a:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    overflow: hidden;
+    background: var(--background-color);
+    transition: all 0.6s ease-out;
 }
 
 #preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #ffffff;
+    border-color: var(--accent-color) transparent var(--accent-color) transparent;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1.5s linear infinite;
 }
 
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
 }
 
 .scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
+    font-size: 24px;
+    color: var(--contrast-color);
+    line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+    color: var(--contrast-color);
 }
 
 .scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
 }
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
 }
 
 /*–––––––––––––––––––––––––––––––––––––––––––––––––––  
@@ -496,112 +496,112 @@ p {
 ––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 /* 1) Slide wrapper: subtract 20px total (10px top + 10px bottom) from 100vh */
 .glightbox-clean .gslide {
-  background: var(--surface-color) !important;
-  border-radius: 0.5rem !important;
-  box-shadow: none !important;
-  padding: 1rem !important;
-  margin: 10px auto !important;
-  width: 90vw !important;
-  max-width: 90vw !important;
-  height: calc(100vh - 20px) !important;
-  max-height: calc(100vh - 20px) !important;
+    background: var(--surface-color) !important;
+    border-radius: 0.5rem !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin: 10px auto !important;
+    width: 90vw !important;
+    max-width: 90vw !important;
+    height: calc(100vh - 20px) !important;
+    max-height: calc(100vh - 20px) !important;
 }
 
 /* 2) Media container fills its parent exactly */
 .glightbox-clean .gslide-media {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  overflow: hidden !important;
-  width: 100% !important;
-  height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* 3) Image letterboxes to fit entirely: */
 .glightbox-clean .gslide-media img {
-  display: block !important;
-  width: auto !important;
-  height: calc(100vh - 20px) !important;
-  max-height: calc(100vh - 20px) !important;
-  max-width: 100% !important;
-  object-fit: contain !important;
-  padding: 0.5rem;
+    display: block !important;
+    width: auto !important;
+    height: calc(100vh - 20px) !important;
+    max-height: calc(100vh - 20px) !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    padding: 0.5rem;
 }
 
 /* 4) Hide any remaining caption: */
 .glightbox-clean .gslide-description {
-  display: none !important;
+    display: none !important;
 }
 
 /* 5) Kill any leftover shadows or borders: */
 .glightbox-clean .gslide,
 .glightbox-clean .gslide-inner,
 .glightbox-clean .gslide-media {
-  box-shadow: none !important;
-  border: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
-  position: relative;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .page-title h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .page-title .breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 .page-title .breadcrumbs ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 @media (max-width: 550px) {
-  .page-title h1 {
-    font-size: 23px;
-  }
+    .page-title h1 {
+        font-size: 23px;
+    }
 
-  .section-title h2 {
-    font-size: 28px;
-  }
+    .section-title h2 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 445px) {
-  .page-title h1 {
-    font-size: 20px;
-  }
+    .page-title h1 {
+        font-size: 20px;
+    }
 
-  .section-title h2 {
-    font-size: 25px;
-  }
+    .section-title h2 {
+        font-size: 25px;
+    }
 
-  .section-authors {
-    font-size: 15px;
-  }
+    .section-authors {
+        font-size: 15px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -609,114 +609,114 @@ p {
 --------------------------------------------------------------*/
 section,
 .section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
-  overflow: clip;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 20px 0;
+    overflow: clip;
 }
 
 @media (max-width: 550px) {
 
-  section,
-  .section {
-    /* preserve your vertical padding, add 1rem left/right */
-    padding: 60px 1rem;
-  }
+    section,
+    .section {
+        /* preserve your vertical padding, add 1rem left/right */
+        padding: 60px 1rem;
+    }
 }
 
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
-  position: relative;
+    text-align: center;
+    position: relative;
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
 }
 
 .section-title h2:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
-  left: 0;
-  right: 0;
-  bottom: 1px;
-  margin: auto;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
 }
 
 .section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .section-title p {
-  margin-bottom: 0;
-  text-align: left;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 @media (min-width: 475px) and (max-width: 575px) {
 
-  .page-title .breadcrumbs ol,
-  .page-title h1 {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+    .page-title .breadcrumbs ol,
+    .page-title h1 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 @media (max-width: 475px) {
 
-  .page-title .breadcrumbs ol,
-  .page-title h1 {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+    .page-title .breadcrumbs ol,
+    .page-title h1 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
-  .section-title h2 {
-    font-size: 30px;
-  }
+    .section-title h2 {
+        font-size: 30px;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 474px) {
 
-  .page-title .breadcrumbs ol,
-  .page-title h1 {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+    .page-title .breadcrumbs ol,
+    .page-title h1 {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
-  .page-title .breadcrumbs ol {
-    font-size: 12px;
-  }
+    .page-title .breadcrumbs ol {
+        font-size: 12px;
+    }
 
-  .page-title h1 {
-    font-size: 18px;
-  }
+    .page-title h1 {
+        font-size: 18px;
+    }
 
-  .section-title h2 {
-    font-size: 20px;
-  }
+    .section-title h2 {
+        font-size: 20px;
+    }
 
-  .section-authors {
-    font-size: 14px;
-  }
+    .section-authors {
+        font-size: 14px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -724,108 +724,108 @@ section,
 --------------------------------------------------------------*/
 
 .section-authors {
-  font-size: 18px;
-  /* 18px; sits nicely under a 40px title */
-  font-weight: 400;
-  /* normal weight byline */
-  color: var(--accent-color);
-  margin-top: 0;
-  /* pull it closer to the title */
-  /* margin-bottom: 1rem; */
-  /* space before the next section */
+    font-size: 18px;
+    /* 18px; sits nicely under a 40px title */
+    font-weight: 400;
+    /* normal weight byline */
+    color: var(--accent-color);
+    margin-top: 0;
+    /* pull it closer to the title */
+    /* margin-bottom: 1rem; */
+    /* space before the next section */
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 30%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 }
 
 .hero .container {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
 }
 
 .hero h2 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
+    margin: 5px 0 0 0;
+    font-size: 26px;
 }
 
 .hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .hero .social-links {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .hero .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
+    font-size: 20px;
+    display: inline-block;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    line-height: 1;
+    margin-right: 20px;
+    transition: 0.3s;
 }
 
 .hero .social-links a:hover {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 @media (max-width: 1200px) {
-  .hero h2 {
-    font-size: 36px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    .hero h2 {
+        font-size: 36px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-  .hero p {
-    font-size: 20px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+    .hero p {
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 @media (max-width: 550px) {
-  .hero h2 {
-    font-size: 28px;
-  }
+    .hero h2 {
+        font-size: 28px;
+    }
 
-  .hero p {
-    font-size: 20px;
-  }
+    .hero p {
+        font-size: 20px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -833,118 +833,118 @@ section,
 --------------------------------------------------------------*/
 /* Logos flex-row */
 .ack-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .ack-logo {
-  max-height: 120px;
-  object-fit: contain;
+    max-height: 120px;
+    object-fit: contain;
 }
 
 /* Force the SOEST logo up to 150px tall */
 .soest-logo {
-  /* remove the old cap */
-  max-height: none !important;
-  /* set your desired height */
-  height: 190px !important;
-  width: auto;
-  object-fit: contain;
+    /* remove the old cap */
+    max-height: none !important;
+    /* set your desired height */
+    height: 190px !important;
+    width: auto;
+    object-fit: contain;
 }
 
 .ack-logos .col-auto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Grant text */
 .ack-support {
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Sub-sections */
 .ack-list {
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto 1.5rem;
-  padding-left: 1rem;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    padding-left: 1rem;
 }
 
 .ack-list li {
-  margin-bottom: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 .ack-list strong {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 .ack-list .affiliation {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.4;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
 }
 
 .ack-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .ack-section h5 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------------------------------------
 # Project Teams Grid Layout
 --------------------------------------------------------------*/
 .subproject {
-  margin-bottom: 2rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .person-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 .person-card {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 1rem;
-  text-align: left;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: left;
 }
 
 .person-card strong {
-  display: block;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
 }
 
 .person-card .affiliation {
-  font-size: 0.85rem;
-  color: #555;
-  margin: 0;
-  line-height: 1.3;
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.3;
 }
 
 /*--------------------------------------------------------------
@@ -952,66 +952,66 @@ section,
 --------------------------------------------------------------*/
 @media (max-width: 1000px) {
 
-  .ack-logos,
-  .footer-logos {
-    gap: 1rem !important;
-    justify-content: center !important;
-  }
+    .ack-logos,
+    .footer-logos {
+        gap: 1rem !important;
+        justify-content: center !important;
+    }
 
-  .ack-logos img,
-  .footer-logos .footer-logo {
-    height: 80px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
+    .ack-logos img,
+    .footer-logos .footer-logo {
+        height: 80px !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
 
-  .ack-logos img.soest-logo,
-  .footer-logos .footer-logo--soest {
-    height: 130px !important;
-    width: auto !important;
-  }
+    .ack-logos img.soest-logo,
+    .footer-logos .footer-logo--soest {
+        height: 130px !important;
+        width: auto !important;
+    }
 }
 
 @media (min-width: 550px) and (max-width: 767px) {
 
-  .ack-logos,
-  .footer-logos {
-    gap: 1px !important;
-    justify-content: center !important;
-  }
+    .ack-logos,
+    .footer-logos {
+        gap: 1px !important;
+        justify-content: center !important;
+    }
 
-  .ack-logos img,
-  .footer-logos .footer-logo {
-    height: 70px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
+    .ack-logos img,
+    .footer-logos .footer-logo {
+        height: 70px !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
 
-  .ack-logos img.soest-logo,
-  .footer-logos .footer-logo--soest {
-    height: 115px !important;
-  }
+    .ack-logos img.soest-logo,
+    .footer-logos .footer-logo--soest {
+        height: 115px !important;
+    }
 }
 
 @media (max-width: 550px) {
 
-  .ack-logos,
-  .footer-logos {
-    gap: 1px !important;
-    justify-content: center !important;
-  }
+    .ack-logos,
+    .footer-logos {
+        gap: 1px !important;
+        justify-content: center !important;
+    }
 
-  .ack-logos img,
-  .footer-logos .footer-logo {
-    height: 50px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
+    .ack-logos img,
+    .footer-logos .footer-logo {
+        height: 50px !important;
+        width: auto !important;
+        object-fit: contain !important;
+    }
 
-  .ack-logos img.soest-logo,
-  .footer-logos .footer-logo--soest {
-    height: 90px !important;
-  }
+    .ack-logos img.soest-logo,
+    .footer-logos .footer-logo--soest {
+        height: 90px !important;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1020,408 +1020,408 @@ section,
 
 /* Theme vars */
 #authors {
-  --ack-card-bg: #ffffff;
-  --ack-card-text: #222;
-  --ack-muted: #555;
-  --ack-border: #e0e0e0;
+    --ack-card-bg: #ffffff;
+    --ack-card-text: #222;
+    --ack-muted: #555;
+    --ack-border: #e0e0e0;
 }
 
 /* ---------- Filter bar: wraps cleanly without many breakpoints ---------- */
 /* shared container padding so filter bar = card grid edges */
 #authors {
-  --authors-x: 15px;
+    --authors-x: 15px;
 }
 
 /* tweak this if you want wider gutters */
 
 #authors .ack-filterbar {
-  display: grid;
-  /* 3-up: wider search, flexible selects (prevents the right edge from hugging) */
-  grid-template-columns: minmax(240px, 2fr) minmax(180px, 1fr) minmax(180px, 1fr);
-  grid-template-areas: "q role team";
-  gap: .75rem;
-  align-items: center;
+    display: grid;
+    /* 3-up: wider search, flexible selects (prevents the right edge from hugging) */
+    grid-template-columns: minmax(240px, 2fr) minmax(180px, 1fr) minmax(180px, 1fr);
+    grid-template-areas: "q role team";
+    gap: .75rem;
+    align-items: center;
 
-  /* align with cards */
-  margin: 1rem auto 1.25rem;
-  padding-inline: var(--authors-x);
+    /* align with cards */
+    margin: 1rem auto 1.25rem;
+    padding-inline: var(--authors-x);
 
-  /* use the EXACT caps your grid uses so edges line up */
+    /* use the EXACT caps your grid uses so edges line up */
 }
 
 @media (min-width: 576px) {
-  #authors .ack-filterbar {
-    max-width: 540px;
-  }
+    #authors .ack-filterbar {
+        max-width: 540px;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 767.98px) {
 
-  /* keep filter bar aligned with the cards */
-  #authors .ack-filterbar,
-  #authors .person-grid {
-    max-width: 654px;
-  }
+    /* keep filter bar aligned with the cards */
+    #authors .ack-filterbar,
+    #authors .person-grid {
+        max-width: 654px;
+    }
 }
 
 @media (min-width: 768px) {
-  #authors .ack-filterbar {
-    max-width: 720px;
-  }
+    #authors .ack-filterbar {
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
-  #authors .ack-filterbar {
-    max-width: 960px;
-  }
+    #authors .ack-filterbar {
+        max-width: 960px;
+    }
 }
 
 @media (min-width: 1200px) {
-  #authors .ack-filterbar {
-    max-width: 1140px;
-  }
+    #authors .ack-filterbar {
+        max-width: 1140px;
+    }
 }
 
 @media (min-width: 1400px) {
-  #authors .ack-filterbar {
-    max-width: 1320px;
-  }
+    #authors .ack-filterbar {
+        max-width: 1320px;
+    }
 }
 
 /* wire up the areas to your existing inputs */
 #authorSearch {
-  grid-area: q;
+    grid-area: q;
 }
 
 #roleFilter {
-  grid-area: role;
+    grid-area: role;
 }
 
 #teamFilter {
-  grid-area: team;
+    grid-area: team;
 }
 
 /* 2-up (≈ tablets): Teams drops to a second row; keep matching gutters */
 @media (max-width: 680px) {
-  #authors .ack-filterbar {
-    grid-template-columns: minmax(240px, 2fr) minmax(180px, 1fr);
-    grid-template-areas:
-      "q    q"
-      "role team";
-  }
+    #authors .ack-filterbar {
+        grid-template-columns: minmax(240px, 2fr) minmax(180px, 1fr);
+        grid-template-areas:
+            "q    q"
+            "role team";
+    }
 }
 
 /* 1-up (≤580px): three rows, each full width (matches card width/padding) */
 @media (max-width: 580px) {
-  #authors .ack-filterbar {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "q"
-      "role"
-      "team";
-  }
+    #authors .ack-filterbar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "q"
+            "role"
+            "team";
+    }
 }
 
 #authors .ack-input,
 /* inputs look the same; leaving your styles as-is */
 #authors .ack-input,
 #authors .ack-select {
-  border: 1px solid #e0e0e0;
-  background: #fff;
-  padding: .55rem .65rem;
-  border-radius: 6px;
-  font-size: .95rem;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: .55rem .65rem;
+    border-radius: 6px;
+    font-size: .95rem;
 }
 
 #authors .ack-select {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 #authors .ack-results {
-  font-size: .9rem;
-  color: #666;
+    font-size: .9rem;
+    color: #666;
 }
 
 @media (max-width:640px) {
-  #authors .ack-filterbar {
-    grid-template-columns: 1fr 1fr;
-  }
+    #authors .ack-filterbar {
+        grid-template-columns: 1fr 1fr;
+    }
 
-  #authors .ack-input {
-    grid-column: 1 / -1;
-  }
+    #authors .ack-input {
+        grid-column: 1 / -1;
+    }
 
-  /* search full width on small screens */
+    /* search full width on small screens */
 }
 
 /* ---------- Card grid: equal-height cards per row ---------- */
 #authors .person-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-  align-items: stretch;
-  /* equal heights per row */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+    /* equal heights per row */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* keep your max-width container caps */
 @media (min-width:576px) {
-  #authors .person-grid {
-    max-width: 540px;
-  }
+    #authors .person-grid {
+        max-width: 540px;
+    }
 }
 
 @media (min-width:768px) {
-  #authors .person-grid {
-    max-width: 720px;
-  }
+    #authors .person-grid {
+        max-width: 720px;
+    }
 }
 
 @media (min-width:992px) {
-  #authors .person-grid {
-    max-width: 960px;
-  }
+    #authors .person-grid {
+        max-width: 960px;
+    }
 }
 
 @media (min-width:1200px) {
-  #authors .person-grid {
-    max-width: 1140px;
-  }
+    #authors .person-grid {
+        max-width: 1140px;
+    }
 }
 
 @media (min-width:1400px) {
-  #authors .person-grid {
-    max-width: 1320px;
-  }
+    #authors .person-grid {
+        max-width: 1320px;
+    }
 }
 
 /* ---------- Card layout: 4-row grid (name, badges, flex-body, actions) ---------- */
 #authors .person-card {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  gap: .5rem;
-  height: 100%;
-  min-height: 200px;
-  /* gentle floor; remove if you want */
-  background: var(--ack-card-bg) !important;
-  color: var(--ack-card-text);
-  border: 1px solid var(--ack-border);
-  border-radius: 6px;
-  padding: 1rem;
-  overflow: hidden;
-  /* keeps Email pill inside */
-  transition: box-shadow .15s ease, transform .15s ease;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    gap: .5rem;
+    height: 100%;
+    min-height: 200px;
+    /* gentle floor; remove if you want */
+    background: var(--ack-card-bg) !important;
+    color: var(--ack-card-text);
+    border: 1px solid var(--ack-border);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow: hidden;
+    /* keeps Email pill inside */
+    transition: box-shadow .15s ease, transform .15s ease;
 }
 
 #authors .person-card * {
-  min-width: 0;
+    min-width: 0;
 }
 
 /* allow wrapping instead of overflow */
 
 #authors .person-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-  transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transform: translateY(-2px);
 }
 
 /* Name */
 #authors .person-card h6.name {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 0;
 }
 
 /* Badges */
 #authors .badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    margin: 0;
 }
 
 #authors .badge {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: .35rem .5rem;
-  border-radius: 999px;
-  font-size: .72rem;
-  line-height: 1.1;
-  background: #f3f5f7;
-  color: #333;
-  border: 1px solid #e3e3e3;
-  font-weight: normal;
-  text-transform: none;
-  text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: .35rem .5rem;
+    border-radius: 999px;
+    font-size: .72rem;
+    line-height: 1.1;
+    background: #f3f5f7;
+    color: #333;
+    border: 1px solid #e3e3e3;
+    font-weight: normal;
+    text-transform: none;
+    text-decoration: none;
 }
 
 #authors .badge.role {
-  background: #edf3ff;
-  border-color: #d6e3ff;
+    background: #edf3ff;
+    border-color: #d6e3ff;
 }
 
 #authors .badge.team {
-  background: #f6f7f8;
-  border-color: #eee;
-  white-space: normal;
-  text-align: left;
+    background: #f6f7f8;
+    border-color: #eee;
+    white-space: normal;
+    text-align: left;
 }
 
 /* role hints */
 #authors .badge.is-pi {
-  background: #e8f5e9;
-  border-color: #c8e6c9;
+    background: #e8f5e9;
+    border-color: #c8e6c9;
 }
 
 #authors .badge.is-copi {
-  background: #e3f2fd;
-  border-color: #bbdefb;
+    background: #e3f2fd;
+    border-color: #bbdefb;
 }
 
 #authors .badge.is-postdoc {
-  background: #fff3e0;
-  border-color: #ffe0b2;
+    background: #fff3e0;
+    border-color: #ffe0b2;
 }
 
 #authors .badge.is-collab {
-  background: #f3e5f5;
-  border-color: #e1bee7;
+    background: #f3e5f5;
+    border-color: #e1bee7;
 }
 
 #authors .badge.is-dev {
-  background: #ede7f6;
-  border-color: #d1c4e9;
+    background: #ede7f6;
+    border-color: #d1c4e9;
 }
 
 /* Body text (flexible row) */
 #authors .person-card .affiliation {
-  color: var(--ack-muted);
-  line-height: 1.35;
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: initial !important;
-  word-break: break-word;
-  margin: 0;
-  /* let grid gap handle spacing */
+    color: var(--ack-muted);
+    line-height: 1.35;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: initial !important;
+    word-break: break-word;
+    margin: 0;
+    /* let grid gap handle spacing */
 }
 
 /* Actions pinned at bottom of card */
 #authors .card-actions {
-  display: flex;
-  gap: .5rem;
-  flex-wrap: wrap;
-  align-self: end;
-  /* bottom row alignment */
-  margin-top: .25rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    align-self: end;
+    /* bottom row alignment */
+    margin-top: .25rem;
 }
 
 /* Email button */
 #authors .email-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  padding: .42rem .6rem;
-  border: 1px solid #d6e3ff;
-  background: #edf3ff;
-  color: #0b5ed7;
-  border-radius: 999px;
-  font-size: .82rem;
-  line-height: 1;
-  text-decoration: none;
-  white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .42rem .6rem;
+    border: 1px solid #d6e3ff;
+    background: #edf3ff;
+    color: #0b5ed7;
+    border-radius: 999px;
+    font-size: .82rem;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 #authors .email-btn:hover {
-  background: #e0ecff;
-  border-color: #c0d6ff;
+    background: #e0ecff;
+    border-color: #c0d6ff;
 }
 
 #authors .email-btn svg {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
-  display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    display: inline-block;
 }
 
 /* Empty state */
 #authors .ack-empty {
-  text-align: center;
-  color: #666;
-  margin-top: 1rem;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
 }
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .content h2 {
-  font-weight: 700;
-  font-size: 24px;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 .about .content ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .about .content ul strong {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
+    font-size: 16px;
+    margin-right: 5px;
+    color: var(--accent-color);
+    line-height: 0;
 }
 
 /* ---------- Learn-more callout (subtle, accessible) ---------- */
 .callout {
-  border: 1px solid rgb(151 151 151 / 41%);
-  background:  #f9f9f9;
-  border-radius: 10px;
-  padding: .75rem .9rem;
-  margin: 1.25rem 0;
+    border: 1px solid rgb(151 151 151 / 41%);
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: .75rem .9rem;
+    margin: 1.25rem 0;
 }
 
 /* collapse/expand affordance */
 .callout>summary {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  cursor: pointer;
-  list-style: none;
-  /* remove default marker */
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    cursor: pointer;
+    list-style: none;
+    /* remove default marker */
 }
 
 .callout>summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
 .callout-icon {
-  width: 50px;
-  height: 50px;
-  opacity: .85;
+    width: 50px;
+    height: 50px;
+    opacity: .85;
 }
 
 .callout-title {
-  font-weight: 600;
-  color: #272829;
+    font-weight: 600;
+    color: #272829;
 }
 
 .callout-hint {
-  margin-left: auto;
-  font-size: .85rem;
-  color:rgb(143, 146, 149);
+    margin-left: auto;
+    font-size: .85rem;
+    color: rgb(143, 146, 149);
 }
 
 /* opened state (slightly stronger, still subtle) */
@@ -1432,21 +1432,21 @@ details.callout[open] {
 }
 
 .callout-body {
-  margin-top: .6rem;
-  color: #272829;
-  line-height: 1.55;
+    margin-top: .6rem;
+    color: #272829;
+    line-height: 1.55;
 }
 
 /* keep the callout aligned with your site container on narrow screens */
 @media (max-width: 576px) {
-  .callout {
-    padding: .7rem .8rem;
-  }
+    .callout {
+        padding: .7rem .8rem;
+    }
 
-  .callout-icon {
-    width: 20px;
-    height: 20px;
-  }
+    .callout-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
@@ -1454,235 +1454,224 @@ details.callout[open] {
 # Report Video Section
 --------------------------------------------------------------*/
 .video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  margin: 2rem 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
 }
 
 .video-wrapper video,
 .video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item+.info-item {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 .contact .info-item i {
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+    color: var(--accent-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
 }
 
 .contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
 }
 
 .contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+    background: var(--accent-color);
+    color: var(--contrast-color);
 }
 
 .contact .php-email-form {
-  height: 100%;
+    height: 100%;
 }
 
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+    color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+    background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
 /*--------------------------------------------------------------
   Split-Section (Grid) — two equal columns, auto-stack on mobile
 --------------------------------------------------------------*/
 .split-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "text img";
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text img";
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    align-items: center;
 }
 
 /* reverse order on desktop */
 .split-section.reverse {
-  grid-template-areas: "img text";
+    grid-template-areas: "img text";
 }
 
 /* stack both normal & reversed on narrow screens */
 @media (max-width: 768px) {
 
-  .split-section,
-  .split-section.reverse {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "img"
-      "text";
-  }
+    .split-section,
+    .split-section.reverse {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "img"
+            "text";
+    }
 }
 
 /* place-holders for the two areas */
 .split-section .split-text {
-  grid-area: text;
+    grid-area: text;
 }
 
 /* give the “card” some breathing room */
 .split-section .split-image {
-  padding: 1rem;
-  /* space inside border */
-  background: var(--surface-color);
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  /* let shadows show */
+    padding: 1rem;
+    /* space inside border */
+    background: var(--surface-color);
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    /* let shadows show */
 }
 
 /* ensure images never bleed out & letterbox if aspect mismatch */
 .split-section .split-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  padding-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    padding-top: 0.5rem;
 }
 
 /* make figcaption a positioned parent */
 .split-section .split-image figcaption {
-  position: relative;
-  display: block;
-  max-width: 468px;
-  margin: 0.75rem auto 0;
-  padding-top: 1rem;
-  padding-bottom: 1.25rem;
-  /* extra bottom padding for your absolute source */
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    position: relative;
+    display: block;
+    max-width: 468px;
+    margin: 0.75rem auto 0;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+    /* extra bottom padding for your absolute source */
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 
-  font-size: 0.95rem;
-  line-height: 1.4;
-  font-style: italic;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-style: italic;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
 
-  text-align: justify;
-  text-align-last: center;
-  hyphens: auto;
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
 }
 
 /* absolutely pin the source to the bottom-right of the caption box */
 .split-section .split-image figcaption .figure-source {
-  position: absolute;
-  right: 0.5rem;
-  bottom: 0.25rem;
-  font-size: 0.75rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  white-space: nowrap;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.25rem;
+    font-size: 0.75rem;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    white-space: nowrap;
+}
 
-  .split-section .split-image figcaption .figure-source a {
+.split-section .split-image figcaption .figure-source a {
     color: inherit;
     text-decoration: underline;
-  }
+}
 
-  .figure-source {
+.figure-source {
     display: block;
-    /* make it fill the parent width */
     max-width: 100%;
-    /* cannot overflow its container */
     font-size: 0.8rem;
     color: #666;
     margin-top: 0.5rem;
     text-align: right;
     white-space: normal !important;
-    /* allow wrapping */
     overflow-wrap: break-word !important;
-    /* force break if needed */
     word-break: break-word !important;
-  }
+}
 
-  .figure-source a {
+.figure-source a {
     white-space: normal !important;
-    /* override any theme forcing nowrap */
     overflow-wrap: break-word !important;
     word-break: break-word !important;
-  }
+}
 
-  .split-image figcaption .figure-source {
-    max-width: 100%;
-    display: block;
-  }
-
-
-  .split-image {
+.split-section .split-image {
     position: relative;
-  }
+}
 
-  /* the title overlay at the top */
-  .figure-title-overlay {
+.figure-title-overlay {
     position: absolute;
     top: 0.5rem;
     left: 0;
-    width: 100%;
+    width: 100%; 
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     padding: 0.25rem 0;
@@ -1690,17 +1679,14 @@ details.callout[open] {
     font-size: 0.95rem;
     color: var(--heading-color);
     z-index: 2;
-  }
+}
 
-  /* push the image down so it’s not hidden under the title */
-  .split-section .split-image a {
+.split-section .split-image a {
     display: block;
     margin-top: 1.5rem;
-    /* adjust to match the height of your title bar */
-  }
+}
 
-  /* the little “expand” badge */
-  .split-image .expand-icon {
+.split-image .expand-icon {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
@@ -1713,27 +1699,26 @@ details.callout[open] {
     cursor: pointer;
     transition: background 0.2s ease;
     z-index: 2;
-  }
+}
 
-  .split-image .expand-icon i {
+.split-image .expand-icon i {
     color: rgba(0, 0, 0, 0.6);
     font-size: 1rem;
-  }
+}
 
-  /*----------------------------------------------------------------------*/
-  /* Resources Section                                                    */
-  /*----------------------------------------------------------------------*/
-  .explore-section {
+/*----------------------------------------------------------------------*/
+/* Resources Section                                                    */
+/*----------------------------------------------------------------------*/
+.explore-section {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+}
 
-  .explore-section .section-title h2 {
+.explore-section .section-title h2 {
     margin-bottom: 1rem;
-  }
+}
 
-  /* citation styling */
-  .explore-section .citation {
+.explore-section .citation {
     max-width: 800px;
     margin: 0 auto 2rem auto;
     font-size: 0.95rem;
@@ -1741,61 +1726,68 @@ details.callout[open] {
     line-height: 1.5;
     text-align: center;
     color: var(--default-color);
-  }
+}
 
-  /* QR Cards Row: use flexbox & center items */
-  .explore-content .qr-grid {
-    /* remove Bootstrap’s row side‐margins */
+.explore-content .qr-grid {
     margin-left: 0;
     margin-right: 0;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    /* spacing between items */
-  }
+}
 
-  /* force every “.qr-item” to be 280px wide, regardless of screen size */
-  .explore-content .qr-item {
+.explore-content .qr-item {
     flex: 0 0 auto;
-    /* ignore the Bootstrap col-* flex rules */
     width: 280px;
-    /* whatever fixed width you prefer */
-  }
+}
 
-  /* card around each QR code */
-  .qr-card {
+.qr-card {
     border: none;
     background: var(--surface-color);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-  }
+}
 
-  .qr-img {
+.qr-img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
     margin-bottom: 0.5rem;
-  }
+}
 
-  .qr-card .card-title {
+.qr-card .card-title {
     font-size: 1rem;
     margin-bottom: 0.25rem;
     font-weight: 600;
-  }
+}
 
-  .qr-card .card-text {
+.qr-card .card-text {
     font-size: 0.85rem;
     margin: 0;
-  }
+}
 
-  .qr-card a {
+.qr-card a {
     color: var(--accent-color);
     text-decoration: none;
-  }
+}
 
-  .qr-card a:hover {
+.qr-card a:hover {
     text-decoration: underline;
-  }
+}
+
+/* ---------- Fix callout invalid border ---------- */
+details.callout[open] {
+    background: #f9f9f9;
+    border: 1px solid rgb(151 151 151 / 41%);
+    box-shadow: 0 4px 14px rgba(17, 24, 39, 0.06);
+}
+
+@media (min-width: 1190px) and (max-width: 1300px) {
+
+    section,
+    .section {
+        padding: 7rem;
+    }
+}
